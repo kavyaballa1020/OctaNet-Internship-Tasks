@@ -82,22 +82,6 @@ body {
     flex-wrap: wrap;
     max-width: 800px;
   }
-  
-  .card {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 30%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.10);
-  }
-  
   .card h3 {
     display: flex;
     align-items: center;
@@ -105,30 +89,6 @@ body {
   
   .card h3 i {
     margin-right: 10px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  input,
-  textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
   }
   
   
@@ -235,6 +195,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #courses .card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center;
+    box-shadow: 0 4px 8px 0 blue;
+  }  
+  .card:hover {
+    transform: scale(1.10);
+  }
+  #courses h3{
+    color: rgb(0, 0, 84);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
 
   /*---------------------------contact----------------------------------*/
   #contact{
@@ -243,6 +229,62 @@ body {
     background-repeat: no-repeat;
     color: white;
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    background-color: #000000a8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 255, 68);
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 255, 68);
+    align-items: center;
+    background-color: #000000a8;
+    transition: 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 2px 4px rgb(0, 255, 68);
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  button {
+    color: #fff;
+    background-color: #00ff3cd4;
+    padding: 10px 20px;
+    box-shadow: 0 3px 5px rgb(17, 255, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    width: auto;
+    margin: auto;
+    transition: 0.3s;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #00ff3c;
+    box-shadow: 0 3px 5px rgb(0, 255, 42);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  
   /* -------------------footer----------------------------*/
   footer {
     background-color: #333;

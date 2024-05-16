@@ -47,18 +47,24 @@ body {
   }
   
   main {
-    padding-top: 80px;
+    padding-top: 80px; /* Adjusted padding-top to accommodate the navbar height */
   }
   
   section {
-    height: 100vh;
+    height: calc(100vh - 80px); /* Adjusted height to account for the navbar height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
   }
+  
+  #home {
+    height: 100vh; /* Reset the height for the home section */
+  }
+  
+  /* ... (rest of the CSS code remains the same) ... */
   
   section h1,
   section h2 {
@@ -146,4 +152,20 @@ body {
   
   .social-icons a:hover {
     color: #ccc;
+  }
+  #home{
+    background: url('https://wallpaper.dog/large/11043890.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #internships{
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/947/386/desktop-wallpaper-7-blue-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #courses{
+    background: url('https://i.pinimg.com/736x/d6/b9/01/d6b901d7a1bb431e0b6101c595c81a06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }

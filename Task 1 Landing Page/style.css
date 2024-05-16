@@ -7,13 +7,13 @@ body {
   header {
     background-color: #000000d2;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 98%;
     z-index: 1;
-    box-shadow: 0 2px 4px white;
+    box-shadow: 0 1px 3px 0 rgba(243, 255, 243, 0.875);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +26,7 @@ body {
   
   .navbar-brand {
     font-weight: bold;
+    font-size: 25px;
   }
   
   nav ul {
@@ -51,11 +52,7 @@ body {
   nav li {
     margin-left: 10px;
   }
-  
-  main {
-    padding-top: 20px; /* Adjusted padding-top to accommodate the navbar height */
-  }
-  
+
   section {
     height:100vh; /* Adjusted height to account for the navbar height */
     display: flex;
@@ -65,10 +62,7 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
-  
-  #home {
-    height: 100vh; /* Reset the height for the home section */
-  }
+
   
   /* ... (rest of the CSS code remains the same) ... */
   
@@ -101,7 +95,7 @@ body {
   }
   
   .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
   
   .card h3 {
@@ -137,6 +131,119 @@ body {
     cursor: pointer;
   }
   
+  
+  /* -----------------------------------HOME-------------------------------------------------*/
+  #home{
+    background: url('https://wallpaper.dog/large/11043890.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 25px ;
+  }
+  #home h1{
+    font-size: 40px;
+    color: rgb(0, 255, 26);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #02180c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px 0 greenyellow;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+  .btn:hover {
+    background-color: #15ff00c6;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+/*---------------------------Interships----------------------------------*/
+
+  #internships{
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/947/386/desktop-wallpaper-7-blue-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  #internships .card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    color: black;
+    font-weight: 520;
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center;
+    box-shadow: 0 4px 8px 0 blue;
+  }  
+  .card:hover {
+    transform: scale(1.10);
+  }
+  #internships h3{
+    color: rgb(0, 0, 84);
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+.card img {
+  height: auto;
+  box-shadow: 0 1px 4px blue;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+#internships .btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #04003d;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 4px 0 rgb(50, 47, 255);
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#internships .btn:hover {
+  background-color: #1d1d7c;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/*---------------------------courses----------------------------------*/
+  #courses{
+    background: url('https://i.pinimg.com/736x/d6/b9/01/d6b901d7a1bb431e0b6101c595c81a06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*---------------------------contact----------------------------------*/
+  #contact{
+    background: url('https://wallpaper.dog/large/11043890.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  /* -------------------footer----------------------------*/
   footer {
     background-color: #333;
     color: #fff;
@@ -158,26 +265,4 @@ body {
   
   .social-icons a:hover {
     color: #ccc;
-  }
-  #home{
-    background: url('https://wallpaper.dog/large/11043890.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
-  #internships{
-    background: url('https://e1.pxfuel.com/desktop-wallpaper/947/386/desktop-wallpaper-7-blue-light.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #courses{
-    background: url('https://i.pinimg.com/736x/d6/b9/01/d6b901d7a1bb431e0b6101c595c81a06.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #contact{
-    background: url('https://wallpaper.dog/large/11043890.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
   }

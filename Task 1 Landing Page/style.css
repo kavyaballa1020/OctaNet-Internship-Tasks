@@ -337,18 +337,15 @@ body {
     right: 60px;
     top: 0;
   }
-  /* Display the navbar brand on small screens */
   .navbar-brand {
     display: block;
-    order: 1; /* Display the navbar brand at the beginning on small screens */
+    order: 1; 
   }
 
-  /* Hide the navigation links by default on small screens */
   nav ul {
     display: none;
   }
 
-  /* Display the navigation links on small screens when the toggle button is active */
   
   #home{
     background: url('https://wallpaper.dog/large/11043890.jpg');

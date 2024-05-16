@@ -45,6 +45,17 @@ body {
     align-items: center;
     position: relative;
     margin-right: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  }
+  nav a:hover {
+    color: #00ff3c;
+    background-color: #0000001a;
+    transform: scale(1.05);
+  }
+  nav a:active {
+    background-color: #0000001a;
+    transform: scale(1.1);
+    outline: none;
   }
   
   nav i {

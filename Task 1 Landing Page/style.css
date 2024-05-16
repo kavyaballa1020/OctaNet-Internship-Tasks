@@ -320,3 +320,278 @@ body {
   .social-icons a:hover {
     color: #ccc;
   }
+/* -----------------------SMALL SCREENS-------------------------*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .home-content {
+    padding: 10px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+.toggle-button {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Display the toggle button only on small screens */
+  .toggle-button {
+    display: block;
+    order: 2; /* Display the toggle button at the end on small screens */
+    position: absolute;
+    right: 60px;
+    top: 0;
+  }
+  /* Display the navbar brand on small screens */
+  .navbar-brand {
+    display: block;
+    order: 1; /* Display the navbar brand at the beginning on small screens */
+  }
+
+  /* Hide the navigation links by default on small screens */
+  nav ul {
+    display: none;
+  }
+
+  /* Display the navigation links on small screens when the toggle button is active */
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: #080101;
+  }
+
+  nav ul.active li {
+    margin: 10px 0;
+  }
+
+  nav ul.active li a {
+    color: #fff;
+  }
+  #home{
+    background: url('https://wallpaper.dog/large/11043890.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 10px ;
+  }
+  #home h1{
+    font-size: 14px;
+    color: rgb(0, 255, 26);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #02180c;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px 0 greenyellow;
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  
+  .btn:hover {
+    background-color: #15ff00c6;
+    color: black;
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  #internships .card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    color: black;
+    font-weight: 100;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    box-shadow: 0 4px 8px 0 blue;
+  }  
+  .card:hover {
+    transform: scale(1.10);
+  }
+  #internships h3{
+    color: rgb(0, 0, 84);
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  
+.card img {
+  height: auto;
+  box-shadow: 0 1px 4px blue;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+#internships .btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #04003d;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 4px 0 rgb(50, 47, 255);
+  font-size: 10px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#internships .btn:hover {
+  background-color: #1d1d7c;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+header {
+  background-color: #000000d2;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 1;
+  box-shadow: 0 1px 3px 0 rgba(243, 255, 243, 0.875);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand,
+nav a {
+  font-size: 20px; 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(40, 3, 3);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+nav a:hover {
+  color: #00ff3c;
+  background-color: #0000001a;
+  transform: scale(1.05);
+}
+nav a:active {
+  background-color: #0000001a;
+  transform: scale(1.1);
+  outline: none;
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+section {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section h1,
+section h2 {
+  display: flex;
+  align-items: center;
+}
+
+section i {
+  margin-right: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.card h3 {
+  display: flex;
+  align-items: center;
+}
+
+}

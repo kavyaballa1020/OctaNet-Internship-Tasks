@@ -320,62 +320,15 @@ body {
   .social-icons a:hover {
     color: #ccc;
   }
+  .toggle-button {
+    display: none;
+  }
 /* -----------------------SMALL SCREENS-------------------------*/
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  nav li {
-    margin-left: 0;
-    margin-bottom: 5px;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-  }
-
-  .home-content {
-    padding: 10px;
-  }
-
-  .home-content h1 {
-    font-size: 28px;
-  }
-
-  .home-content p {
-    font-size: 16px;
-  }
-
-  .btn {
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-
-  form {
-    max-width: 100%;
-    padding: 10px;
-  }
-}
-.toggle-button {
-  display: none;
-}
 
 
 
-@media screen and (max-width: 768px) {
+
+ @media screen and (max-width: 768px) {
   /* Display the toggle button only on small screens */
   .toggle-button {
     display: block;
@@ -396,24 +349,7 @@ body {
   }
 
   /* Display the navigation links on small screens when the toggle button is active */
-  nav ul.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    left: 0;
-    width: 100%;
-    background-color: #080101;
-  }
-
-  nav ul.active li {
-    margin: 10px 0;
-  }
-
-  nav ul.active li a {
-    color: #fff;
-  }
+  
   #home{
     background: url('https://wallpaper.dog/large/11043890.jpg');
     background-size: cover;
@@ -421,6 +357,21 @@ body {
     color: white;
     font-size: 10px ;
   }
+  header {
+    background-color: #000000d2;
+    color: #fff;
+    padding: 20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 1;
+    box-shadow: 0 1px 3px 0 rgba(243, 255, 243, 0.875);
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  
   #home h1{
     font-size: 14px;
     color: rgb(0, 255, 26);
@@ -445,25 +396,28 @@ body {
     font-size: 10px;
     font-weight: bolder;
   }
+  #internships h2{
+    font-size: 20px;
+  }
+  
   #internships .card {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 20px;
-    padding: 10px;
     width: 70%;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     transition: transform 0.3s ease;
     color: black;
-    font-weight: 100;
     display: flex; 
     flex-direction: column; 
     align-items: center;
     box-shadow: 0 4px 8px 0 blue;
+    font-size: 10px;
+    margin-left: 50px;
   }  
-  .card:hover {
-    transform: scale(1.10);
-  }
+ 
   #internships h3{
     color: rgb(0, 0, 84);
     font-size: 10px;
@@ -475,8 +429,8 @@ body {
   box-shadow: 0 1px 4px blue;
   margin-bottom: 10px;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 #internships .btn {
   display: inline-block;
@@ -485,46 +439,29 @@ body {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
   box-shadow: 0 1px 4px 0 rgb(50, 47, 255);
   font-size: 10px;
   font-weight: bolder;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #internships .btn:hover {
   background-color: #1d1d7c;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 8px;
   font-weight: bolder;
-}
-
-header {
-  background-color: #000000d2;
-  color: #fff;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 98%;
-  z-index: 1;
-  box-shadow: 0 1px 3px 0 rgba(243, 255, 243, 0.875);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar-brand,
 nav a {
-  font-size: 20px; 
+  font-size: 10px; 
 }
 
 .navbar-brand {
-  font-weight: bold;
-  font-size: 25px;
-  color: rgb(40, 3, 3);
-  text-decoration: none;
+  display: none;
+
 }
 
 nav ul {
@@ -582,16 +519,98 @@ section h2 {
 section i {
   margin-right: 10px;
 }
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
 .card h3 {
   display: flex;
   align-items: center;
 }
+#courses .card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px ;
+  width: 80%;
+  height: 30%;
+  margin: 20px;
+  margin-left: 40px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  color: black;
+  font-weight: 50;
+  font-size: 13px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  box-shadow: 0 4px 8px 0 blue;
+}  
+.card:hover {
+  transform: scale(1.10);
+}
+#courses h3{
+  color: rgb(0, 0, 84);
+  font-size: 14px;
+  font-weight: 50;
+}
+#courses h2{
+  font-size: 12px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 70%;
+  background-color: #000000a8;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0, 255, 68);
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #000000a8;
+  transition: 0.3s;
+  outline: none;
+  box-shadow: 0 2px 4px rgb(0, 255, 68);
+  margin-left: 25px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #000000;
+  box-shadow: 0 3px 5px rgb(0, 255, 42);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  color: white;
+}
+
+button {
+  color: #fff;
+  background-color: #00ff3cd4;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgb(17, 255, 0);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  width: auto;
+  margin: auto;
+  transition: 0.3s;
+  display: block;
+}
+
+button:hover {
+  background-color: #00ff3c;
+  box-shadow: 0 3px 5px rgb(0, 255, 42);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
 
 }

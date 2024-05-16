@@ -329,10 +329,9 @@ body {
 
 
  @media screen and (max-width: 768px) {
-  /* Display the toggle button only on small screens */
   .toggle-button {
     display: block;
-    order: 2; /* Display the toggle button at the end on small screens */
+    order: 2; 
     position: absolute;
     right: 60px;
     top: 0;
